@@ -1,6 +1,6 @@
 # Chatbot UI
 
-The open-source AI chat app for everyone.
+Running a Chatbot UI instance on Supabase and Vercel.
 
 <img src="./public/readme/screenshot.png" alt="Chatbot UI" width="600">
 
