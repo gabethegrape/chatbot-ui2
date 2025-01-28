@@ -79,3 +79,10 @@ BEGIN
       FROM public.delete_storage_object(bucket_name, object_path) AS result;
 END;
 $$;
+
+-- Create the workspaces table (adjust columns to your needs)
+CREATE TABLE IF NOT EXISTS public.workspaces (
+    id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    name text NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now()
+);
